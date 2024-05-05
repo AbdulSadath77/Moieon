@@ -1,0 +1,27 @@
+.then((data) => {
+        // console.log(data);
+        let arrOfUrls = [];
+        for (let i = 0; i < data.length; i++) {
+          arrOfUrls = [
+            ...arrOfUrls,
+            `https://image.tmdb.org/t/p/w500${data[i].poster_path}`,
+          ];
+        }
+        // console.log(arrOfUrls);
+        setImageUrls(arrOfUrls);
+      })
+
+        return res.data.results;
+  const [imageUrls, setImageUrls] = useState([]);
+
+
+        // console.log(moviesResults);
+  // console.log(imageUrls);
+  // let randomImgUrl =imageUrls[Math.floor(Math.random() * imageUrls.length)]
+
+  // `https://image.tmdb.org/t/p/w500${
+  console.log(imageUrls[Math.floor(Math.random() * imageUrls.length)]);
+  // }`;
+  // https://image.tmdb.org/t/p/w500${
+  //
+  // }
